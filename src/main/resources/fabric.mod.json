@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "oretogo",
+	"version": "${version}",
+	"name": "OreToGo",
+	"description": "A little mod providing `Ore and Materials` you'll need for Create: Craft and Additions and more!",
+	"authors": [
+		"weearc@github"
+	],
+	"contact": {
+		"homepage": "https://blog.weearc.top/oretogo/wiki",
+		"sources": "https://github.com/weearc/oretogo"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/oretogo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"top.weearc.oretogo.OreToGo"
+		],
+		"client": [
+			"top.weearc.oretogo.OreToGoClient"
+		],
+		"fabric-datagen": [
+			"top.weearc.oretogo.OreToGoDataGenerator"
+		]
+	},
+	"mixins": [
+		"oretogo.mixins.json",
+		{
+			"config": "oretogo.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
