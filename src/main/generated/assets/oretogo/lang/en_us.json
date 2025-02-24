@@ -1,0 +1,10 @@
+{
+  "block.oretogo.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.oretogo.raw_silver_block": "Raw Silver Block",
+  "block.oretogo.silver_block": "Silver Block",
+  "block.oretogo.silver_ore": "Silver Ore",
+  "item.oretogo.raw_silver": "Raw Silver",
+  "item.oretogo.silver_ingot": "Silver Ingot",
+  "item.oretogo.silver_nugget": "Silver Nugget",
+  "itemGroup.oretogo_group": "Ore To Go"
+}

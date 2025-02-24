@@ -4,6 +4,9 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import top.weearc.oretogo.block.ModBlocks;
+import top.weearc.oretogo.item.ModItemGroups;
+import top.weearc.oretogo.item.ModItems;
 
 public class OreToGo implements ModInitializer {
 	public static final String MOD_ID = "oretogo";
@@ -19,6 +22,12 @@ public class OreToGo implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Loading OreToGo mod");
+		LOGGER.debug("Loading OreToGo item registry");
+		ModItems.registerItems();
+		LOGGER.debug("Loading OreToGo item group registry");
+		ModItemGroups.registerGroups();
+		LOGGER.debug("Loading OreToGo block registry");
+		ModBlocks.registerBlockItems();
 	}
 }

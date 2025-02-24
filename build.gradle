@@ -16,6 +16,36 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+//	mavenCentral()
+//	maven { url = "https://libraries.minecraft.net/" }
+//	maven { url = "https://api.modrinth.com/maven" }
+//	maven { url = "https://maven.terraformersmc.com/releases/" }
+//	maven { url = "https://maven.shedaniel.me/"  }
+//	maven { url = "https://maven.wispforest.io" } // TOP
+//	maven { url = "https://maven.blamejared.com" } // CraftTweaker, Immersive Engineering
+//	maven { url = "https://www.cursemaven.com" }
+//	maven { url = "https://maven.ladysnake.org/releases" }
+//	maven { url = "https://mvn.devos.one/releases/" }
+//	maven { url = "https://mvn.devos.one/snapshots/" }
+//	maven { url = "https://maven.parchmentmc.org" }
+//	maven { url = "https://maven.vram.io" }
+//	maven { url = "https://jitpack.io" }
+//	maven {
+//		// location of the maven that hosts JEI files
+//		name = "Progwml6 maven"
+//		url = "https://dvs1.progwml6.com/files/maven/"
+//	}
+//	maven {
+//		// location of a maven mirror for JEI files, as a fallback
+//		name = "ModMaven"
+//		url = "https://modmaven.dev"
+//	}
+//	maven {
+//		url = "https://maven.jamieswhiteshirt.com/libs-release"
+//		content {
+//			includeGroup "com.jamieswhiteshirt"
+//		}
+//	}
 }
 
 loom {
@@ -24,7 +54,6 @@ loom {
 	mods {
 		"oretogo" {
 			sourceSet sourceSets.main
-			sourceSet sourceSets.client
 		}
 	}
 
@@ -44,6 +73,12 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	//3rd party dependencies
+//	include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.1.1")))
+//	for (String module in port_lib_modules.split(",")) {
+//		modImplementation(include("io.github.fabricators_of_create.Porting-Lib:$module:$port_lib_version+$minecraft_base_version"))
+//	}
 	
 }
 

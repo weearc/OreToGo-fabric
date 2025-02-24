@@ -26,11 +26,7 @@
 		]
 	},
 	"mixins": [
-		"oretogo.mixins.json",
-		{
-			"config": "oretogo.client.mixins.json",
-			"environment": "client"
-		}
+		"oretogo.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",

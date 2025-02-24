@@ -1,0 +1,16 @@
+// 1.20.1	2025-02-25T00:11:06.393514923	OreToGo/Model Definitions
+7efb136bd4ba19adc4d538893b470cb5a1c134f9 assets/oretogo/models/item/silver_block.json
+61f779ec175fd79a61131273f6a8f3bc4d4512c7 assets/oretogo/blockstates/deepslate_silver_ore.json
+5c46461e8557ad37bf049da9b92deaab2aaa3d9b assets/oretogo/models/item/deepslate_silver_ore.json
+110e546368abae9229e865ed504d38c7b11399fa assets/oretogo/models/item/silver_nugget.json
+68755c0f604510acd15be525384f3f960eb490ad assets/oretogo/models/item/silver_ingot.json
+f4f2588cfb00a3a154cba689b9419a2017579111 assets/oretogo/models/block/silver_ore.json
+1a161121e7204a1440b7484423c77ac673aefb60 assets/oretogo/models/item/raw_silver_block.json
+03a946ed7e996cd1252caf5700ccd19ea8f26b91 assets/oretogo/blockstates/silver_block.json
+6f1181628cc731c6e4479db25bbfdbd77f79bc8e assets/oretogo/models/block/raw_silver_block.json
+a0514d2ea175af24cbaa80ee79c3dfa3f2537438 assets/oretogo/blockstates/silver_ore.json
+737044707d6a8bfa18c80a5af32b4e9c1d62a4c2 assets/oretogo/models/block/deepslate_silver_ore.json
+7fc46f62dcfecb085482e707b5b83a860d9f7b7e assets/oretogo/models/item/raw_silver.json
+df54bed687a1dc3f722bf8fd778f85b837710de1 assets/oretogo/models/block/silver_block.json
+f235e2beff0821853a62699d6b38d7ae7ff6cafc assets/oretogo/blockstates/raw_silver_block.json
+b019466a86aa88df3739f4163b45de2fac95523c assets/oretogo/models/item/silver_ore.json

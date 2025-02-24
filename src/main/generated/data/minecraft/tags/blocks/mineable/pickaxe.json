@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "oretogo:deepslate_silver_ore",
+    "oretogo:silver_ore",
+    "oretogo:silver_block",
+    "oretogo:raw_silver_block"
+  ]
+}
