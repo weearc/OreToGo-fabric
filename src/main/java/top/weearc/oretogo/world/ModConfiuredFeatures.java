@@ -23,19 +23,21 @@ public class ModConfiuredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_KEY = of("silver_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DEEPSLATE_SILVER_ORE_KEY = of("deepslate_silver_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> RAW_SILVER_BLOCK_KEY = of("raw_silver_block");
-    public static final RegistryKey<ConfiguredFeature<? ,?>> DEEPSLATE_RAW_SILVER_BLOCK_KEY = of("deepslate_raw_silver_block");
+//    public static final RegistryKey<ConfiguredFeature<?, ?>> RAW_SILVER_BLOCK_KEY = of("raw_silver_block");
+//    public static final RegistryKey<ConfiguredFeature<? ,?>> DEEPSLATE_RAW_SILVER_BLOCK_KEY = of("deepslate_raw_silver_block");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable) {
 
         RuleTest oreOverworldReplacement = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        RuleTest oreNetherReplacement =  new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
-        RuleTest oreEndReplacement = new BlockMatchRuleTest(Blocks.END_STONE);
         RuleTest oreDeepslateReplacement = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
+        RuleTest oreNetherReplacement =  new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
+        RuleTest oreEndReplacement = new BlockMatchRuleTest(Blocks.END_STONE);
+
+
         List<OreFeatureConfig.Target> overWorldTargets = List.of(
-                OreFeatureConfig.createTarget(oreOverworldReplacement, ModBlocks.RAW_SILVER_BLOCK.getDefaultState()),
+//                OreFeatureConfig.createTarget(oreOverworldReplacement, ModBlocks.RAW_SILVER_BLOCK.getDefaultState()),
                 OreFeatureConfig.createTarget(oreOverworldReplacement, ModBlocks.SILVER_ORE.getDefaultState())
         );
 
@@ -48,10 +50,10 @@ public class ModConfiuredFeatures {
 
         List<OreFeatureConfig.Target> netherTargets = List.of();
 
-        register(featureRegisterable, SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overWorldTargets,6));
-        register(featureRegisterable, DEEPSLATE_SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(deepslateTargets,8));
-        register(featureRegisterable, RAW_SILVER_BLOCK_KEY, Feature.ORE, new OreFeatureConfig(overWorldTargets,2));
-        register(featureRegisterable, DEEPSLATE_SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(deepslateTargets,4));
+        register(featureRegisterable, SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overWorldTargets,9));
+        register(featureRegisterable, DEEPSLATE_SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(deepslateTargets,11, 0.6f));
+//        register(featureRegisterable, RAW_SILVER_BLOCK_KEY, Feature.ORE, new OreFeatureConfig(overWorldTargets,3, 0.2f));
+//        register(featureRegisterable, DEEPSLATE_RAW_SILVER_BLOCK_KEY, Feature.ORE, new OreFeatureConfig(deepslateTargets,2, 0.7f));
 
 
     }

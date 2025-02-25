@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import top.weearc.oretogo.block.ModBlocks;
 import top.weearc.oretogo.item.ModItemGroups;
 import top.weearc.oretogo.item.ModItems;
+import top.weearc.oretogo.world.gen.ModWorldGeneration;
 
 public class OreToGo implements ModInitializer {
 	public static final String MOD_ID = "oretogo";
@@ -23,11 +24,13 @@ public class OreToGo implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Loading OreToGo mod");
-		LOGGER.debug("Loading OreToGo item registry");
+		LOGGER.info("Loading OreToGo item registry");
 		ModItems.registerItems();
-		LOGGER.debug("Loading OreToGo item group registry");
+		LOGGER.info("Loading OreToGo item group registry");
 		ModItemGroups.registerGroups();
-		LOGGER.debug("Loading OreToGo block registry");
+		LOGGER.info("Loading OreToGo block registry");
 		ModBlocks.registerBlockItems();
+		LOGGER.info("Loading OreToGo world registry");
+		ModWorldGeneration.registerWorldGenerations();
 	}
 }
